@@ -28,6 +28,10 @@ const SimpleInput = () => {
   const formSubmittionHandler = (e) => {
     e.preventDefault();
 
+    if (!formIsValid) {
+      return
+    }
+
     resetNameInput()
     resetEmailInput()
   }
